@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:  
+  data:
+    redis:
+      host: 192.168.137.40
+      port: 6379
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save
+      namespace: spring:session
